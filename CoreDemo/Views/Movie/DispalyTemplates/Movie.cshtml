@@ -1,0 +1,8 @@
+﻿@model CoreDemo.Models.Movie
+<tr>
+    <td scope="col">@Model.Id</td>
+    <td>@Model.Name</td>
+    <td>@Model.Starring</td>
+    <td>@Model.ReleaseDate</td> 
+    <td asp-action="Edit" asp-route-movieId="@Model.Id">编辑</td>
+</tr>
